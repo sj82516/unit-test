@@ -23,7 +23,7 @@ function UserManager(db){
         // never used md5 for hash password in production
         const hashedPassword = md5(password);
 
-        if(isValidAccount){
+        if(!isValidAccount){
             throw "InvalidAccount"
         }
 

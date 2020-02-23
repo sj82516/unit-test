@@ -25,7 +25,7 @@ function UserController({
             }
             if(error === 'InvalidAccount'){
                 return res.json(400, {
-                    message: "AccountInvalid"
+                    message: "InvalidAccount"
                 })
             }
             if(error === 'UserNotFound'){
